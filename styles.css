@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+#grid {
+    background-color: black;
+    padding: 5px;
+    width: fit-content;
+}
+
+.div {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+    /* background-color: #ddd; */
+}
+
+.subdiv {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    background-color: blanchedalmond;
+}
+
+/* .subdiv:hover {
+    background-color: brown;
+} */
