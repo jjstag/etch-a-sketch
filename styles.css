@@ -6,25 +6,26 @@ body {
 
 div {
     box-sizing: border-box;
-}
+} 
 
 #grid {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     padding: 5px;
-    width: fit-content;
+    width: 400px;
+    height: 400px;
 }
 
 .div {
     display: flex;
-    flex-wrap: nowrap;
-    width: fit-content;
-    /* background-color: #ddd; */
+    align-items: stretch;
+    flex: 1;
 }
 
 .subdiv {
-    width: 20px;
-    height: 20px;
-    margin: 2px;
+    flex: 1;
+    border: .5px solid black;
     background-color: blanchedalmond;
 }
 

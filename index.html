@@ -17,6 +17,11 @@
         let size = 16
         sizeBtn.addEventListener("click", () => {
             size = prompt("Enter a size for the grid", 16)
+            if (size > 75 || size < -75) return 0;
+            while (grid.firstChild) {
+                grid.removeChild(grid.lastChild);
+            }
+            createGrid(size)
         })
 
         function createGrid(size) {
